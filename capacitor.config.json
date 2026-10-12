@@ -1,0 +1,7 @@
+{
+  "appId": "app.whitehole.habits", "appName": "WhiteHole", "webDir": "dist",
+  "backgroundColor": "#151515",
+  "android": { "backgroundColor": "#151515", "allowMixedContent": false },
+  "ios": { "backgroundColor": "#151515", "contentInset": "never", "scrollEnabled": false },
+  "plugins": { "LocalNotifications": { "smallIcon": "ic_notification", "iconColor": "#D9D9D9", "presentationOptions": ["banner", "list"] } }
+}

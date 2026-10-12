@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WhiteHole</string>
+    <string name="title_activity_main">WhiteHole</string>
+    <string name="package_name">app.whitehole.habits</string>
+    <string name="custom_url_scheme">app.whitehole.habits</string>
+</resources>
