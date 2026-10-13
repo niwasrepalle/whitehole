@@ -2,7 +2,7 @@
 
 A quiet nightly habit tracker: open it at night, check in, and go to sleep. Built by **Niwas Repalle** with JavaScript, Capacitor and local-first storage.
 
-Android source and a browser preview are available; iOS source and a WidgetKit extension are prepared, with native iPhone compilation and device verification still pending. The interface uses soft-black grayscale, DM Sans, stacked swipe cards, a dot tracker and a flat habit list.
+Android source and a browser preview are available. iOS source and a WidgetKit extension have passed an unsigned simulator build in GitHub Actions; signed iPhone installation and real-device verification remain pending. The interface uses soft-black grayscale, DM Sans, stacked swipe cards, a dot tracker and a flat habit list.
 
 ## What works
 
