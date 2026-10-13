@@ -1,6 +1,6 @@
 # WhiteHole
 
-A quiet nightly habit tracker: open it at night, check in, and go to sleep. Built by **Niwas Repalle & Sai Chand** with JavaScript, Capacitor and local-first storage.
+A quiet nightly habit tracker: open it at night, check in, and go to sleep. Built by **Niwas Repalle** with JavaScript, Capacitor and local-first storage.
 
 Android source and a browser preview are available; iOS source and a WidgetKit extension are prepared, with native iPhone compilation and device verification still pending. The interface uses soft-black grayscale, DM Sans, stacked swipe cards, a dot tracker and a flat habit list.
 
@@ -58,7 +58,7 @@ npm run icons:server
 
 Development requests are proxied to port 8787. Production phones need a deployed HTTPS backend: set `VITE_ICON_API=https://your-service.example` before building and syncing. Configure `ALLOWED_ORIGINS` for the browser origin plus `https://localhost` (Android) and `capacitor://localhost` (iPhone). The server validates bounded SVG path strings, caches drawings and limits requests per IP. The optional Dockerfile supports deployment with environment secrets. Additional authentication, distributed limits and provider budget controls are needed before a public release.
 
-Creator credit: Made by Niwas Repalle & Sai Chand.
+Creator credit: Made by Niwas Repalle.
 
 Default model: `gemini-3.1-flash-lite`; override with `ICON_MODEL`. A real unfamiliar-goal request succeeded during development. The supplied APK has no hosted icon endpoint or embedded key; common icons work offline and unfamiliar goals receive the neutral fallback until a backend is deployed. Generated drawings can be replaced in the icon picker.
 
