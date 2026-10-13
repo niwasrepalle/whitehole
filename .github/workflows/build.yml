@@ -1,5 +1,7 @@
 name: Phone builds
 on: [push, workflow_dispatch]
+permissions:
+  contents: read
 jobs:
   android:
     runs-on: ubuntu-latest

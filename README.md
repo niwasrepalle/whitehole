@@ -1,6 +1,8 @@
 # WhiteHole
 
-A quiet nightly habit tracker for Android and iPhone. Soft-black grayscale, DM Sans, tall stacked swipe cards, a three-icon navigation bar, a dot tracker and a flat habit list.
+A quiet nightly habit tracker: open it at night, check in, and go to sleep. Built by **Niwas Repalle & Sai Chand** with JavaScript, Capacitor and local-first storage.
+
+Android source and a browser preview are available; iOS source and a WidgetKit extension are prepared, with native iPhone compilation and device verification still pending. The interface uses soft-black grayscale, DM Sans, stacked swipe cards, a dot tracker and a flat habit list.
 
 ## What works
 
@@ -15,7 +17,7 @@ A quiet nightly habit tracker for Android and iPhone. Soft-black grayscale, DM S
 
 ## Try it
 
-The supplied `WhiteHole-Android-preview.apk` is a debug-signed Android test build, not a store release. Transfer it to an Android phone and open it; the phone may ask permission to install from that source. All tracking works offline. No demo history is inserted into your real progress.
+For a browser preview, follow **Run locally** below. For an Android test build, open this repository's **Actions → Phone builds**, wait for the Android job to pass, then download the `WhiteHole-Android-preview` artifact and extract its APK. The artifact is a debug-signed test build, not a store release. Transfer it to an Android phone and open it; the phone may ask permission to install from that source. All tracking works offline. No demo history is inserted into your real progress.
 
 On Android, choose Settings → Home widget → Add to home screen, or add WhiteHole through your launcher's widget picker. On iPhone, add the widget through the Home Screen widget gallery after installing a signed build. Tap the widget to open check-in.
 
@@ -62,7 +64,9 @@ Default model: `gemini-3.1-flash-lite`; override with `ICON_MODEL`. A real unfam
 
 ## Verification and release boundary
 
-27 automated tracking, Excel-export, icon-service and iOS-project checks, end-to-end browser checks and an Android debug compilation were completed. Browser checks cover onboarding, touch swipes, undo, tracker edits, habit management, themes, backup download, invalid imports, persistence and narrow screens. See `screenshots/` for the actual rendered app.
+The automated suite covers tracking, Excel-export, icon-service and iOS-project structure. Earlier development checks included browser flows and an Android debug compilation. Browser checks covered onboarding, touch swipes, undo, tracker edits, habit management, themes, backup download, invalid imports, persistence and narrow screens. Current repository validation is recorded below after the publication check; structural iOS tests are not evidence of an actual iPhone build.
+
+Publication check on **13 October 2026**: clean dependency install, **27/27 automated tests passed**, and the production web build passed. The GitHub Actions workflow builds Android and attempts an unsigned iOS simulator build; its run results are separate from these local checks.
 
 Native notification delivery, widgets and haptics still need real-device testing. iOS needs Mac compilation/signing. Store publication, cloud sync, paid subscriptions and a hosted icon backend are not included. No user data or provider credentials are shipped in this source.
 
